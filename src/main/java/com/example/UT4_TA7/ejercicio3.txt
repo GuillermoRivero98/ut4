@@ -1,0 +1,25 @@
+De tipo entero TipoElementoAB.algoritmoTres() 
+Comienzo 
+x  0; y  0; 
+Si hijoIzquierdo <> nulo entonces 
+x hijoIzquierdo.algoritmoTres() 
+fin si 
+Si hijoDerecho <> nulo entonces 
+y  hijoDerecho.algoritmoTres() 
+fin si 
+devolver x + y + (entero)etiqueta 
+Fin 
+Resultado: 
+
+
+        4
+       / \
+      3   6
+     /   / \
+    1   5   7
+     \
+      2
+
+3+0+4 =7
+
+resultado es 7

@@ -1,0 +1,37 @@
+Contexto: En ocasiones es necesario buscar cierto elemento de un árbol binario de búsqueda 
+por un atributo que no es con el que se armó el árbol, por ejemplo, el árbol se armó por 
+nombre y se necesita buscar por cédula. En este caso no se puede aplicar el algoritmo de 
+búsqueda por comparación de claves, sino que debe recorrerse el árbol en una búsqueda 
+secuencial, resultando en un orden de búsqueda lineal. 
+Desarrollar el siguiente algoritmo: 
+encuentraLinealUno(nombreAtributo, valorAtributo): devuelve verdadero si hay un nodo con 
+ese valor del atributo indicado, y falso en caso contrario. 
+¿Cuántas comparaciones se realizan si el valor del atributo buscado tiene está en el nodo de 
+etiqueta igual a 1?
+
+
+seudocódigo:
+
+conmienza 
+
+Función encuentraLinealUno(nombreAtributo, valorAtributo):
+    Si el árbol es vacío entonces
+        Devolver falso
+    Fin Si
+    
+    Si el nodo actual tiene el valor del atributo igual a valorAtributo entonces
+        Devolver verdadero
+    Fin Si
+    
+    Si encuentraLinealUno(nombreAtributo, valorAtributo) para el hijo izquierdo entonces
+        Devolver verdadero
+    Fin Si
+    
+    Si encuentraLinealUno(nombreAtributo, valorAtributo) para el hijo derecho entonces
+        Devolver verdadero
+    Fin Si
+    
+    Devolver falso
+Fin Función
+
+fin
